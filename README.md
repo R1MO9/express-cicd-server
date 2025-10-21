@@ -18,12 +18,10 @@ A minimal Express-based server scaffold intended for CI/CD experiments and small
 Clone the repository and install dependencies:
 
 ```powershell
-git clone <repo-url> express-cicd-server
+git clone `https://github.com/R1MO9/express-cicd-server.git`
 cd express-cicd-server
 npm install
 ```
-
-Replace `<repo-url>` with the URL of this repository.
 
 ## Available scripts
 
@@ -31,7 +29,6 @@ Scripts are defined in `package.json`:
 
 - `npm start` — Run the app with Node (`node index.js`).
 - `npm run dev` — Run the app with `nodemon` for development (auto-restarts on file changes).
-- `npm test` — Placeholder test script (currently exits with an error).
 
 Example: start the dev server
 
