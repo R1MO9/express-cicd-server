@@ -27,7 +27,7 @@ jobs:
           SERVER_IP: ${{ secrets.SERVER_IP }}
         run: |
           ssh -i ~/.ssh/id_rsa $SERVER_USER@$SERVER_IP "
-            cd /projects/express-cicd-server &&
+            cd /home/${SERVER_USER}/project/express-cicd-server &&
             git pull &&
             npm install &&
             pm2 restart all
